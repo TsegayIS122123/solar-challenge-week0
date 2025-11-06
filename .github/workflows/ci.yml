@@ -1,0 +1,29 @@
+name: CI Pipeline
+
+on: [push, pull_request]
+
+jobs:
+  test-environment:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        
+    - name: Verify Python setup
+      run: |
+        python --version
+        pip list
+        
+    - name: Test import key packages
+      run: |
+        python -c "import pandas, numpy, matplotlib, streamlit; print('All imports successful!')"
