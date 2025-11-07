@@ -1,20 +1,11 @@
-# Core data analysis
 pandas==2.3.1
 numpy==2.3.3
 scipy==1.16.1
-
-# Visualization
 matplotlib==3.10.1
 seaborn==0.13.2
 plotly==6.2.0
-
-# Jupyter & Development
 jupyter==1.0.0
 ipykernel==6.29.5
-
-# Dashboard
 streamlit==1.51.0
-
-# Additional utilities
-windrose==1.6.8
 scikit-learn==1.7.1
+windrose==1.9.2
