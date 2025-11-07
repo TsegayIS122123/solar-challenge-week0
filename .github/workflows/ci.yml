@@ -3,27 +3,18 @@ name: CI Pipeline
 on: [push, pull_request]
 
 jobs:
-  test-environment:
+  test:
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      
-    - name: Set up Python
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.13
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9'
-        
+        python-version: '3.13'
     - name: Install dependencies
       run: |
+        pip install --upgrade pip
         pip install -r requirements.txt
-        
-    - name: Verify Python setup
+    - name: Test imports
       run: |
-        python --version
-        pip list
-        
-    - name: Test import key packages
-      run: |
-        python -c "import pandas, numpy, matplotlib, streamlit; print('All imports successful!')"
+        python -c "import pandas, numpy, matplotlib, seaborn, streamlit, windrose; print(' SUCCESS: All packages work with Python 3.13!')"
