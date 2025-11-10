@@ -385,7 +385,5 @@ st.sidebar.info("""
 ** Usage Tips:**
 - Upload your CSV data or use demo data
 - Select countries and metrics for comparison
-- Choose visualization types
-- Download filtered results
 - Contact support for custom analysis
 """)
