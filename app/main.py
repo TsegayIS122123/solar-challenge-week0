@@ -57,7 +57,7 @@ def main():
         df, message = load_data(uploaded_file)
         
         if df is not None:
-            st.success(f"✅ {message}")
+            st.success(f" {message}")
             
             # Sidebar filters
             filters = render_sidebar_filters(df)
@@ -163,7 +163,7 @@ def main():
     else:
         # Welcome screen when no file uploaded
         st.markdown("""
-        <div style='text-align: center; padding: 4rem; background-color: #f0f2f6; border-radius: 10px;'>
+        <div style='text-align: center; padding: 4rem; background-color: #444444; border-radius: 10px;'>
             <h2>🚀 Get Started</h2>
             <p>Upload your solar data CSV file to begin analysis</p>
             <p><em>Use the file uploader in the sidebar →</em></p>

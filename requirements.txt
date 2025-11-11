@@ -9,3 +9,4 @@ ipykernel==6.29.5
 streamlit==1.51.0
 scikit-learn==1.7.1
 windrose==1.9.2
+statsmodels==0.14.5 
