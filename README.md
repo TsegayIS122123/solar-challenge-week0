@@ -77,5 +77,5 @@ You can read my full project summary and insights here:
 📄 [Download the PDF Report](https://drive.google.com/file/d/1kK0khFZT-13XudFeEuPD3aoKQr2bgB2g/view?usp=drive_link)
 
 🖥️ Live Dashboard: [Solar Dashboard](https://tsegayis122123-solar-challenge-week0-appmain-t1wmvd.streamlit.app/)
-[Dashboard Screenshot](dashboard_screenshots/dashboard_screenshot.png)
+[Dashboard Screenshot](dashboard_screenshots/)
 
